@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            /* -----------------------
+       ELIGE EL FONDO AQUÍ
+       ----------------------- */
+            /*  background: linear-gradient(135deg, #800000 50%, #b8860b 50%);*/
+            background-color: #1B2A49;
+            /* gris de base */
+            background-image: url('./img/x-removebg-preview.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            /* mantiene proporción */
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Imagen central responsiva */
+        
+        .container img {
+            width: 50vw;
+            /* máximo 50% del ancho de la ventana */
+            max-width: 250px;
+            /* nunca más de 250px de ancho */
+            height: auto;
+            /* mantiene proporción */
+            border-radius: 10px;
+            margin-bottom: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Botón dorado degradado */
+        
+        .container button {
+            padding: 12px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: linear-gradient(to right, #ffffff, #b8870b2d);
+            transition: 0.3s;
+        }
+        
+        .container button:hover {
+            background: linear-gradient(to right, #fdfdfd, #b8870b60);
+        }
+        /* Sección de invitación responsiva */
+        
+        .invitacion {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            max-width: 90vw;
+            /* se adapta a móviles */
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .invitacion.show {
+            display: block;
+            opacity: 1;
+        }
+        
+        .boton-dorado {
+            display: inline-block;
+            padding: 12px 35px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: linear-gradient(to right, #b8870b60, #b8870b67);
+            transition: 0.3s;
+            text-align: center;
+        }
+        
+        .boton-dorado:hover {
+            background: linear-gradient(to right, #b8860b, #b8860b);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Imagen central opcionalmente clicable -->
+        <a href="invitacion.html">
+            <img src="./img/sobre dorado.png" alt="Invitación">
+        </a>
+
+        <br>
+
+        <!-- Botón dorado que lleva a otra página -->
+        <a href="invitacion.html" class="boton-dorado">Ver invitación</a>
+
+        <!-- Ya no se necesita la sección invitación ni el script -->
+    </div>
+</body>
+
+</html>
